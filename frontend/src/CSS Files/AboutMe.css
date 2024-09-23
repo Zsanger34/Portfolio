@@ -1,0 +1,16 @@
+.about-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2vw;
+  color: #007bff;
+}
+
+.about-section p {
+  font-size: .8vw;
+  color: #333;
+  max-width: 30vw;
+  margin: 0 auto;
+}

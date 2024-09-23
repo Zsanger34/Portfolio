@@ -1,0 +1,17 @@
+.homelab-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.homelab-section h2 {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.homelab-section p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 20px;
+}

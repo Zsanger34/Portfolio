@@ -1,0 +1,24 @@
+.contact-section {
+  padding: 80px 20px; /* Increase padding */
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem; /* Larger font for headings */
+  color: #007bff;
+}
+
+.contact-section p {
+  font-size: 1.5rem; /* Increase text size for contact info */
+  color: #333;
+}
+
+.contact-section a {
+  color: #007bff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}

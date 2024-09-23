@@ -1,0 +1,70 @@
+/* General styling for the Projects section */
+.projects-section {
+  padding: 40px;
+}
+
+.projects-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Flexbox layout for project cards */
+.projects-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+/* Styling for each project card */
+.project-card {
+  background-color: #f5f5f5; /* Light off-white color */
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 30%; /* 3 cards per row */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Placeholder card with a 'More to come!' message */
+.placeholder-card {
+  background-color: #f5f5f5; /* Same light off-white color */
+  width: 30%; /* 3 cards per row */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Adjust height to match other cards */
+  font-style: italic;
+  color: #888;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+  .project-card,
+  .placeholder-card {
+    width: 45%; /* 2 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card,
+  .placeholder-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card,
+  .placeholder-card {
+    width: 100%; /* 1 card per row on small screens */
+  }
+}

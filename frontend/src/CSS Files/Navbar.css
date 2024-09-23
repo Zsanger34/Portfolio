@@ -1,29 +1,30 @@
-/* Navbar.css */
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #f9f9f9;
+  padding: 20px 40px; /* Increased padding */
   border-bottom: 2px solid #007bff;
 }
-
+.navbar-logo a {
+  text-decoration: none; /* Remove underline */
+}
 .navbar-logo h2 {
+  font-size: 2vw; /* Larger logo font size */
   margin: 0;
   color: #007bff;
+  text-decoration: none;
 }
 
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 1vw; /* Increased gap between nav items */
   margin: 0;
   padding: 0;
 }
 
 .navbar-links li {
-  font-size: 1.2rem;
+  font-size: 1.2vw; /* Larger font size for nav items */
 }
 
 .navbar-links li a {
@@ -33,20 +34,5 @@
 }
 
 .navbar-links li a:hover {
-  color: #007bff;
-}
-
-.navbar-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.navbar-icons a {
-  color: #333;
-  font-size: 1.5rem;
-  transition: color 0.3s;
-}
-
-.navbar-icons a:hover {
   color: #007bff;
 }
