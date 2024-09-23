@@ -1,100 +1,193 @@
-/* Scoped Resume container */
-.resume-container {
-  font-family: 'Arial', sans-serif;
+/* General styling for the resume section */
+.resume-section {
+  padding: 40px;
   background-color: #f4f4f9;
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  position: relative; /* Make the section relative for the download button */
 }
 
-.resume-inner-container {
+/* Download button positioned at the top-right corner */
+.download-resume {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.download-resume:hover {
+  background-color: #0056b3;
+}
+
+/* Header Section */
+.resume-header {
   text-align: center;
-  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.resume-header h1 {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.resume-header .tagline {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.resume-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Section Headings */
+h2 {
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Summary Section */
+.summary-section {
+  margin-bottom: 40px;
+}
+
+.summary-section p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill-card {
   background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
-  width: 100%;
+}
+
+.skill-card h3 {
+  color: #007bff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Projects Section */
+.projects-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  color: #007bff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Experience Section */
+.experience-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.experience-card h3 {
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+.experience-card ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #333;
+}
+
+/* Contact Call to Action */
+.contact-cta {
+  text-align: center;
   margin-top: 40px;
 }
 
-h1 {
-  font-size: 28px;
+.contact-cta h2 {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.contact-cta p {
+  font-size: 1.2rem;
   color: #333;
   margin-bottom: 20px;
 }
 
-p {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-iframe {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-  height: 800px;
-}
-
-.download-button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 20px;
-  font-size: 16px;
-  color: white;
+.cta-button {
   background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1rem;
   border-radius: 5px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
 }
 
-.download-button:hover {
+.cta-button:hover {
   background-color: #0056b3;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .resume-inner-container {
-    padding: 15px;
+  .skills-grid, .projects-grid {
+    flex-direction: column;
   }
 
-  h1 {
-    font-size: 24px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  iframe {
-    height: 600px;
-  }
-
-  .download-button {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 20px;
-  }
-
-  p {
-    font-size: 12px;
-  }
-
-  iframe {
-    height: 500px;
-  }
-
-  .download-button {
-    font-size: 12px;
-    padding: 6px 12px;
+  .skill-card, .project-card {
+    width: 100%;
   }
 }

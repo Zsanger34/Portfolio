@@ -55,16 +55,28 @@
   }
 }
 
+/* For screens smaller than 768px */
 @media (max-width: 768px) {
-  .project-card,
-  .placeholder-card {
-    width: 45%;
+  .projects-row {
+    justify-content: center; /* Center the cards */
+  }
+
+  .project-card {
+    width: 80%; /* Each card takes up 80% of the width for smaller screens */
+    max-width: none; /* Remove max-width limit */
+    margin: 0 auto; /* Center each card horizontally */
   }
 }
 
+/* For screens smaller than 480px */
 @media (max-width: 480px) {
-  .project-card,
-  .placeholder-card {
-    width: 100%; /* 1 card per row on small screens */
+  .projects-row {
+    flex-direction: column; /* Stack the cards vertically */
+    align-items: center; /* Center align the cards */
+  }
+
+  .project-card {
+    width: 100%; /* Each card takes up the full width */
+    margin: 0 0 20px; /* Add margin for spacing between cards */
   }
 }
