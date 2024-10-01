@@ -183,10 +183,15 @@ h2 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .skills-grid, .projects-grid {
-    flex-direction: column;
-  }
-
+  
+  .skill-card, .projects-grid {
+    max-width: 90vw; /* Adjust as needed */
+    margin: 20px auto; /* Center each card horizontally */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
   .skill-card, .project-card {
     width: 100%;
   }

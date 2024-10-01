@@ -1,0 +1,40 @@
+/* SkillsTree.css */
+
+/* Container for the skills tree */
+.skills-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 1rem;
+  }
+  
+  /* Container for the Vis.js network */
+  .skills-network {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  /* Styling for nodes when hovered */
+  .vis-node:hover {
+    cursor: pointer;
+    border-color: #38bdf8;
+    background-color: #38bdf8;
+  }
+  
+  /* Mobile-specific styles */
+  @media (max-width: 768px) {
+    .skills-container {
+      height: auto;
+      padding: 2rem;
+    }
+    
+    .skills-network {
+      height: 80vh;
+    }
+  }
+  
