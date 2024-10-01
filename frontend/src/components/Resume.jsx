@@ -52,11 +52,11 @@ const Resume = () => {
           </div>
           <div className="skill-card">
             <h3>Technologies & Tools</h3>
-            <p>Git, Docker, Kubernetes, Jenkins, Terraform, React, Django, Flask, Maven</p>
+            <p>Git, Docker, Kubernetes, React, Django, Flask, Maven</p>
           </div>
           <div className="skill-card">
             <h3>Cloud & DevOps</h3>
-            <p>AWS, Microservices, REST APIs, PowerShell, Bash</p>
+            <p>REST APIs, PowerShell, Bash</p>
           </div>
           <div className="skill-card">
             <h3>Soft Skills</h3>
